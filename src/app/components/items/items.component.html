@@ -1,0 +1,14 @@
+
+    <app-nav></app-nav>
+    <div class="container">
+        <input class="btn" [(ngModel)]="search" type="text" placeholder="Search..">
+        <app-button color="green" text="find" (click)="findUser(search)"></app-button>
+        <app-header title="users"></app-header>
+    <app-add-user (adduser)="adduser($event)"></app-add-user>
+    <app-user *ngFor="let user of users" [user]="user"
+    (deleteuserEvent)="deleteUser(user)"
+    ></app-user>
+    </div>
+
+
+

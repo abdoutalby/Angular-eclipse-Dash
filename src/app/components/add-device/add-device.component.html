@@ -1,0 +1,26 @@
+<form *ngIf="showed" class="add-form" (ngSubmit)="adddevice()">
+    <div class="form-control">
+    <label for="owner" >owner</label>
+    <input type="owner" 
+    name="owner" id="owner" 
+    [(ngModel)]="owner" 
+    placeholder="owner">
+</div>
+<div class="form-control">
+    <label for="serial" >serial</label>
+    <input type="serial" 
+    name="serial" id="serial" 
+     [(ngModel)]="serial" 
+     placeholder="serial">
+</div>
+<div class="form-control">
+    <label for="status" >status</label>
+    <input type="status" 
+    name="status" id="status" 
+    [(ngModel)]="status" 
+    placeholder="status">
+</div>
+
+
+    <app-button color="green" text="add Device"></app-button>
+</form>

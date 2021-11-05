@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+.log {
+  position: absolute;
+  right: 30%;
+}

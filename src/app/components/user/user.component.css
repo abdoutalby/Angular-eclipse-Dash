@@ -1,0 +1,18 @@
+.user {
+  background-color: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.userlogged {
+  border-left: 5px solid green;
+}
+.userinfo {
+  border: 2px solid black;
+  padding: 10px;
+}
+h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

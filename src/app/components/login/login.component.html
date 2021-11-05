@@ -1,0 +1,24 @@
+    <div class="container">
+
+        <h1 style="text-align: center; color: green;">Log in</h1>
+    
+        <form  class="add-form"  (ngSumbit)="login()">
+            <div class="form-control">
+            <label for="email" >email</label>
+            <input type="email" 
+            name="email" id="email" 
+            [(ngModel)]="email" 
+            placeholder="email">
+        </div>
+   
+        <div class="form-control">
+            <label for="password" >password</label>
+            <input type="password" 
+            name="password" id="password" 
+            [(ngModel)]="password" 
+            placeholder="password">
+        </div>
+       <button  (click)="login()" class="btn"   >Log In</button>
+        </form>
+    </div>
+    

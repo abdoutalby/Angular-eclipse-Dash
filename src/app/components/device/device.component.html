@@ -1,0 +1,17 @@
+<div class="device"  (dblclick)="ondbl()">
+    <h3>Serial : {{device.serial}}<fa-icon  (click)="(delete(device))" [ngStyle]="{'color':'red'}" [icon]="faTrash"></fa-icon></h3>
+    <div class="deviceinfo">
+        <p>Owner : {{device.owner}}</p>
+        <p>Status : {{device.status}}</p>
+    </div>
+        <div *ngIf="clicked" class="attach" >
+            <app-button color="green" text="attach to" (click)="onattach(device)"></app-button>
+            <div class="form-control">
+                <input type="owner" 
+                name="owner" 
+                id="owner" 
+                [(ngModel)]="owner"
+                placeholder="owner">
+            </div>
+         </div>
+</div>

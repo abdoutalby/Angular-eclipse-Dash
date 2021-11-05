@@ -1,0 +1,7 @@
+<div class="user">
+    <h3>{{user.name}}<fa-icon  (click)="deleteUser(user)" [ngStyle]="{'color':'red'}" [icon]="faTrash"></fa-icon></h3>
+    <div class="userinfo">
+        <p>{{user.email}}</p>
+        <p>{{user.password}}</p>
+    </div>
+</div>

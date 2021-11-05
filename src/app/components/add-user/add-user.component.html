@@ -1,0 +1,33 @@
+<form *ngIf="showed" class="add-form" (ngSubmit)="userregister()">
+    <div class="form-control">
+    <label for="email" >email</label>
+    <input type="email" 
+    name="email" id="email" 
+    [(ngModel)]="email" 
+    placeholder="email">
+</div>
+<div class="form-control">
+    <label for="name" >name</label>
+    <input type="name" 
+    name="name" id="name" 
+     [(ngModel)]="name" 
+     placeholder="name">
+</div>
+<div class="form-control">
+    <label for="password" >password</label>
+    <input type="password" 
+    name="password" id="password" 
+    [(ngModel)]="password" 
+    placeholder="password">
+</div>
+<div class="form-control">
+    <label for="confirmpassword" >confirm password</label>
+    <input type="password" 
+    name="password_confirmation" 
+    id="password_confirmation" 
+    [(ngModel)]="password_confirmation" 
+    placeholder="password">
+</div>
+
+    <app-button color="green" text="register"></app-button>
+</form>

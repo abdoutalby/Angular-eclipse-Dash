@@ -1,0 +1,7 @@
+  <div class="topnav">
+    <a  routerLink="/home" [ngClass]="{active: hasRoute('/home')}">Home</a>
+    <a  [ngClass]="{active: hasRoute('/devices')}" routerLink="/devices">Devices</a>
+    <a  [ngClass]="{active: hasRoute('/users')}" routerLink="/users">Users</a>
+    <a  class="log" (click)="logout()" >Log out</a>
+  
+  </div>

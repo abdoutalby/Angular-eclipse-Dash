@@ -1,0 +1,13 @@
+
+    <app-nav></app-nav>
+    <div>
+<div class="container">
+    <input class="btn" [(ngModel)]="search" type="text" placeholder="Search..">
+    <app-button color="green" text="find"(click)="findDevice(search)"></app-button>
+    <app-header title="devices" ></app-header>
+    <app-add-device (onadd)="adddevice($event)"></app-add-device>
+    <app-device *ngFor="let device of devices" [device]="device"
+    (deleteDeviceEvent)="delete(device)"
+    (attach)="onattach(device)"
+    ></app-device>
+</div>
